@@ -71,7 +71,6 @@ jobs:
           tags: |
             type=raw,value=node${NODE_VERSION}-${DEBIAN_VERSION}
             type=raw,value=node${NODE_VERSION}
-            type=raw,value=${DEBIAN_VERSION}
             type=ref,event=branch
             type=ref,event=pr
             type=semver,pattern={{version}}
