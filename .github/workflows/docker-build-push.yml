@@ -69,8 +69,8 @@ jobs:
         with:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
           tags: |
-            type=raw,value=node${NODE_VERSION}-${DEBIAN_VERSION}
-            type=raw,value=node${NODE_VERSION}
+            type=raw,value=node${{ env.NODE_VERSION }}-${{ env.DEBIAN_VERSION }}
+            type=raw,value=node${{ env.NODE_VERSION }}
             type=ref,event=branch
             type=ref,event=pr
             type=semver,pattern={{version}}
